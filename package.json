@@ -14,16 +14,25 @@
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
     "build": "tsc && vite build",
-    "dev": ""
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@storybook/addon-essentials": "8.6.12",
+    "@storybook/addon-interactions": "8.6.12",
+    "@storybook/addon-onboarding": "8.6.12",
+    "@storybook/blocks": "8.6.12",
+    "@storybook/react": "8.6.12",
+    "@storybook/react-vite": "8.6.12",
+    "@storybook/test": "8.6.12",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@types/react": "^19.1.2",
     "jsdom": "^26.1.0",
+    "storybook": "8.6.12",
     "styled-components": "^6.1.17",
     "typescript": "^5.8.3",
     "vite": "^6.3.4",
@@ -31,6 +40,6 @@
     "vitest": "^3.1.2"
   },
   "peerDependencies": {
-    "react": "^19.1.0"
+    "react": "^19.1.0 || 18.0.0 || 17.0.0"
   }
 }
